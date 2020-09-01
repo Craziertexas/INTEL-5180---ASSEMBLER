@@ -1,0 +1,8 @@
+MAIN:	MOV R1,#0FH
+REST:	DEC R1
+		MOV A,R1
+		JNZ	REST
+		CPL P1.0
+		JZ MAIN
+		
+		
